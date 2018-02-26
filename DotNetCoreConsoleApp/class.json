@@ -1,0 +1,18 @@
+{
+    "ClassNo": "1",
+    "ClassDesc": "ASP.NET Core 101",
+    "Students": [
+      {
+        "name": "zhangsan",
+        "age": "20"
+      },
+      {
+        "name": "lisi",
+        "age": "21"
+      },
+      {
+        "name": "wangwu",
+        "age": "22"
+      }
+    ]
+  }
