@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thrift.Server", "Thrift.Server\Thrift.Server.csproj", "{B33BC119-B7BE-49DC-A114-C4AEA2087919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thrift.Client", "Thrift.Client\Thrift.Client.csproj", "{D048C07B-D917-4D97-8256-5E1487C508C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B33BC119-B7BE-49DC-A114-C4AEA2087919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33BC119-B7BE-49DC-A114-C4AEA2087919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33BC119-B7BE-49DC-A114-C4AEA2087919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33BC119-B7BE-49DC-A114-C4AEA2087919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D048C07B-D917-4D97-8256-5E1487C508C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D048C07B-D917-4D97-8256-5E1487C508C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D048C07B-D917-4D97-8256-5E1487C508C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D048C07B-D917-4D97-8256-5E1487C508C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC893BA8-CDC6-4196-812A-D0479DCB187C}
+	EndGlobalSection
+EndGlobal
