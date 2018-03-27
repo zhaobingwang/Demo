@@ -35,7 +35,8 @@ namespace Produce
                     ITextMessage message = session.CreateTextMessage();// producer.CreateTextMessage();
                     message.Text = "test";
                     message.Properties.SetString("testKey", "testValue");
-                    producer.Send(destination, message);
+                    //producer.Send(destination, message);
+                    producer.Send(destination, message, MsgDeliveryMode.NonPersistent, MsgPriority.Normal, TimeSpan.FromDays(30));
 
                     Console.WriteLine("send success");
                     Console.Read();
