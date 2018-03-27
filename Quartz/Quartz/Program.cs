@@ -50,8 +50,8 @@ namespace Quartz
         {
             Task t = Task.Factory.StartNew(() =>
             {
-                //Console.WriteLine($"CurrentTime:{DateTime.Now}");
-                System.IO.File.AppendAllText(@"c:\Quartz.txt", DateTime.Now + Environment.NewLine);
+                Console.WriteLine($"CurrentTime:{DateTime.Now}");
+                //System.IO.File.AppendAllText(@"c:\Quartz.txt", DateTime.Now + Environment.NewLine);
             });
 
 
