@@ -18,7 +18,7 @@ namespace Produce
             // 2.创建Connection连接
             using (IConnection connection=factory.CreateConnection())
             {
-                //connection.Start(); //默认关闭？
+                connection.Start(); //默认关闭？
                 // 3.创建session？
                 using (ISession session=connection.CreateSession())
                 {
@@ -26,7 +26,7 @@ namespace Produce
                     IDestination destination = new Apache.NMS.ActiveMQ.Commands.ActiveMQQueue("test");
 
                     // 5.创建MessageProducer
-                    IMessageProducer producer = session.CreateProducer(destination);
+                    IMessageProducer producer = session.CreateProducer();
 
                     // 6.设置持久化方式
                     producer.DeliveryMode = MsgDeliveryMode.NonPersistent;
@@ -35,12 +35,17 @@ namespace Produce
                     ITextMessage message = session.CreateTextMessage();// producer.CreateTextMessage();
                     message.Text = "test";
                     message.Properties.SetString("testKey", "testValue");
-                    producer.Send(message);
+                    producer.Send(destination, message);
 
                     Console.WriteLine("send success");
                     Console.Read();
                 }
+                if (connection!=null)
+                {
+                    connection.Close();
+                }
             }
+            
         }
     }
 }

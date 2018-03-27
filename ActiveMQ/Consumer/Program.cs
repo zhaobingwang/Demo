@@ -17,14 +17,11 @@ namespace Consumer
                 IConnectionFactory factory = new ConnectionFactory("tcp://localhost:61616");
                 using (IConnection connection = factory.CreateConnection())
                 {
-
-
-
                     connection.ClientId = "firstQueueListener";
                     connection.Start();
                     using (ISession session = connection.CreateSession())
                     {
-                        IMessageConsumer consumer = session.CreateConsumer(new Apache.NMS.ActiveMQ.Commands.ActiveMQQueue("firstQueue"), "testKey='testValue'");
+                        IMessageConsumer consumer = session.CreateConsumer(new Apache.NMS.ActiveMQ.Commands.ActiveMQQueue("test"), "testKey='testValue'");
                         consumer.Listener += new MessageListener(consumer_listener);
                         Console.Read();
                     }
