@@ -1096,7 +1096,10 @@ namespace Redis
         /// <returns></returns>
         private static string AddKeyPrefix(string key)
         {
-            return $"{DefaultKey}:{key}";
+            if (string.IsNullOrEmpty(DefaultKey))
+                return key;
+            else
+                return $"{DefaultKey}:{key}";
         }
 
         #region 注册事件
