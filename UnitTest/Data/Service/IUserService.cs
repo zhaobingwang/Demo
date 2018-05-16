@@ -8,6 +8,6 @@ namespace Data.Service
 {
     public interface IUserService
     {
-        Task<bool> AddUserAsync(User entity);
+        Task<User> AddUserAsync(User entity);
     }
 }
