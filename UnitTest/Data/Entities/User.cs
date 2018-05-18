@@ -12,6 +12,7 @@ namespace Data.Entities
         public string NickName { get; set; }
         public DateTime CreateTime { get; set; }
         public DateTime ModifyTime { get; set; }
+        public byte UserStatus { get; set; }
         public bool IsDelete { get; set; }
     }
 }

@@ -6,22 +6,26 @@ using Data.Entities;
 
 namespace Data.Service
 {
-    public class UserService : IUserService
+    public class UserService : UserRepository
     {
-        private UserContext _uerContext { get; }
-        public UserService(UserContext userContext)
+        private readonly IUserRepository _repository;
+        public UserService(UserContext context, IUserRepository repository) : base(context)
         {
-            _uerContext = userContext;
+            context = new UserContext();
+            _repository = repository;
         }
-        public async Task<User> AddUserAsync(User entity)
+
+        public async Task<bool> AddUserAsync(User entity)
         {
-            var result = await _uerContext.User.AddAsync(entity);
-            bool success = await _uerContext.SaveChangesAsync() > 0;
-            if (success)
+            if (entity==null)
             {
-                return result.Entity;
+                throw new ArgumentNullException("User info can not be null.");
             }
-            return null;
+            if (entity.UserStatus == 1)
+            {
+                return false;
+            }
+            return await _repository.AddAsync(entity);
         }
     }
 }
