@@ -17,9 +17,9 @@ namespace Data.Service
 
         public async Task<bool> AddUserAsync(User entity)
         {
-            if (entity==null)
+            if (entity == null)
             {
-                throw new ArgumentNullException("User info can not be null.");
+                throw new ArgumentNullException($"{nameof(entity)}");
             }
             if (entity.UserStatus == 1)
             {
