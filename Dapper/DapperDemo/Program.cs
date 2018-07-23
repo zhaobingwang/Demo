@@ -12,7 +12,7 @@ namespace DapperDemo
     {
         static void Main(string[] args)
         {
-            MySqlConnection connection = new MySqlConnection("server=127.0.0.1;database=Example;uid=root;pwd=123456;charset='utf8'");
+            MySqlConnection connection = new MySqlConnection("server=127.0.0.1;database=example01;uid=root;pwd=123456;charset='utf8'");
 
 
             //connection.Execute("insert into users value(null,'王五','wangwu@qq.com','北京')");
@@ -22,7 +22,7 @@ namespace DapperDemo
             string email = $"{name}@qq.com";
             string address = "hangzhou";
 
-            int pageIndex = 5;
+            int pageIndex = 1;
             int pageSize = 10;
             int start = (pageIndex - 1) * pageSize;
 
