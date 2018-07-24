@@ -21,7 +21,6 @@ namespace RedisDemo.ListType
             for (int i = 0; i < 100; i++)
             {
                 redis.ListLeftPush(Constant.T_LIST_KEY, $"用户{i + 1}");
-                redis.li
             }
 
             Console.WriteLine("ok");
