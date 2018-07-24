@@ -23,5 +23,15 @@ namespace SERedis.Common
         /// 测试Set(无序集合)Key2
         /// </summary>
         public const string T_SET_KEY2 = "TestSetKey2";
+
+        /// <summary>
+        /// 测试Hash类型Key
+        /// </summary>
+        public const string T_HASH_KEY = "TestHashKey";
+
+        /// <summary>
+        /// 测试SortedSet类型Key
+        /// </summary>
+        public const string T_SORTEDSET_KEY = "TestSortedSetKey";
     }
 }
