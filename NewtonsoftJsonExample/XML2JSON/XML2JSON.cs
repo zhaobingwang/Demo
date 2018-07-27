@@ -24,6 +24,10 @@ namespace XML2JSON
 
             string json = JsonConvert.SerializeXmlNode(doc);
             Console.WriteLine(json);
+
+            // xml->json
+            System.Xml.Linq.XDocument xmlResult = JsonConvert.DeserializeXNode(json);
+            Console.WriteLine(xmlResult);
         }
     }
 }
