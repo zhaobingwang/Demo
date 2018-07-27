@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacExample", "AutofacExample\AutofacExample.csproj", "{4EEC2B39-E246-4A4C-9319-8C22B592DAF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseOpExample", "DatabaseOpExample\DatabaseOpExample.csproj", "{22525B0B-F920-4FC4-9605-BE5B8D27AD77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4EEC2B39-E246-4A4C-9319-8C22B592DAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EEC2B39-E246-4A4C-9319-8C22B592DAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EEC2B39-E246-4A4C-9319-8C22B592DAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22525B0B-F920-4FC4-9605-BE5B8D27AD77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22525B0B-F920-4FC4-9605-BE5B8D27AD77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22525B0B-F920-4FC4-9605-BE5B8D27AD77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22525B0B-F920-4FC4-9605-BE5B8D27AD77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
