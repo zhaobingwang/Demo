@@ -13,6 +13,15 @@ namespace NLogDemo
             logger.Info("Info Message");
             logger.Error("Error Message");
             logger.Fatal("Fatal Message");
+            try
+            {
+                int a = 0;
+                int b = 10 / a;
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex);
+            }
             Console.WriteLine("Hello World!");
         }
     }
