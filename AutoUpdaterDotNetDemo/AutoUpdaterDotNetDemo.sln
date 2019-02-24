@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28606.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoUpdaterDotNetDemo", "AutoUpdaterDotNetDemo.csproj", "{FCC6DE89-9F4E-42DC-AA80-230CD011EBE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoUpdaterDotNetDemo", "AutoUpdaterDotNetDemo\AutoUpdaterDotNetDemo.csproj", "{5B0F5746-F384-49C2-B07E-02EA3CF2EF3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FCC6DE89-9F4E-42DC-AA80-230CD011EBE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCC6DE89-9F4E-42DC-AA80-230CD011EBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCC6DE89-9F4E-42DC-AA80-230CD011EBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCC6DE89-9F4E-42DC-AA80-230CD011EBE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B0F5746-F384-49C2-B07E-02EA3CF2EF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0F5746-F384-49C2-B07E-02EA3CF2EF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0F5746-F384-49C2-B07E-02EA3CF2EF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0F5746-F384-49C2-B07E-02EA3CF2EF3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {49DEA221-5C72-42EB-ACFA-60358690A535}
+		SolutionGuid = {FAABF7F9-F4D9-4DEB-AB49-D4BFAC24A40C}
 	EndGlobalSection
 EndGlobal
